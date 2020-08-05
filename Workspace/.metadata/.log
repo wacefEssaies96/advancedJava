@@ -456,3 +456,2007 @@ Contains: No repository found containing: org.eclipse.update.feature,org.eclipse
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui,2.22.0.v20200602-1533
 !SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 10:40:31.031
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui.graph,2.22.0.v20200602-1533
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2020-06-13 11:31:10.226
+!MESSAGE The ''org.eclipse.fx.ide.fxml.proposalComputer1'' proposal computer from the ''org.eclipse.fx.ide.fxml'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.getValueOfMethod(FXObjectPoperty.java:54)
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.hasValueOf(FXObjectPoperty.java:46)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createObjectPropnameProposals(FXMLCompletionProposalComputer.java:347)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createAttributeNameProposal(FXMLCompletionProposalComputer.java:281)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.addAttributeNameProposals(FXMLCompletionProposalComputer.java:226)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeAttributeProposals(AbstractXMLCompletionProposalComputer.java:495)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:386)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:171)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2015)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2011)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-06-13 11:31:43.606
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [TpJavaFFXEx2 does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2525)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:984)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:749)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:544)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.eclipse.fx.ide.fxml.editors.FXMLTextHover.getHoverInfo2(FXMLTextHover.java:339)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:141)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-06-13 11:31:43.606
+!MESSAGE TpJavaFFXEx2 does not exist
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2020-06-13 11:33:04.647
+!MESSAGE The ''org.eclipse.fx.ide.fxml.proposalComputer1'' proposal computer from the ''org.eclipse.fx.ide.fxml'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.search.HierarchyScope.computeProjectsAndJars(HierarchyScope.java:221)
+	at org.eclipse.jdt.internal.core.search.HierarchyScope.<init>(HierarchyScope.java:99)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.createHierarchyScope(BasicSearchEngine.java:113)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.createHierarchyScope(BasicSearchEngine.java:106)
+	at org.eclipse.jdt.core.search.SearchEngine.createHierarchyScope(SearchEngine.java:178)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createSubtypeProposals(FXMLCompletionProposalComputer.java:685)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.addTagNameProposals(FXMLCompletionProposalComputer.java:591)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeTagOpenProposals(AbstractXMLCompletionProposalComputer.java:876)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:379)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:171)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2015)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2011)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2020-06-13 11:52:59.241
+!MESSAGE The ''org.eclipse.fx.ide.fxml.proposalComputer1'' proposal computer from the ''org.eclipse.fx.ide.fxml'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.getValueOfMethod(FXObjectPoperty.java:54)
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.hasValueOf(FXObjectPoperty.java:46)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createObjectPropnameProposals(FXMLCompletionProposalComputer.java:347)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createAttributeNameProposal(FXMLCompletionProposalComputer.java:281)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.addAttributeNameProposals(FXMLCompletionProposalComputer.java:226)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeAttributeProposals(AbstractXMLCompletionProposalComputer.java:495)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:386)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:171)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2015)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2011)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2020-06-13 11:54:08.634
+!MESSAGE The ''org.eclipse.fx.ide.fxml.proposalComputer1'' proposal computer from the ''org.eclipse.fx.ide.fxml'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.search.HierarchyScope.computeProjectsAndJars(HierarchyScope.java:221)
+	at org.eclipse.jdt.internal.core.search.HierarchyScope.<init>(HierarchyScope.java:99)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.createHierarchyScope(BasicSearchEngine.java:113)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.createHierarchyScope(BasicSearchEngine.java:106)
+	at org.eclipse.jdt.core.search.SearchEngine.createHierarchyScope(SearchEngine.java:178)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createSubtypeProposals(FXMLCompletionProposalComputer.java:685)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.addTagNameProposals(FXMLCompletionProposalComputer.java:591)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeTagOpenProposals(AbstractXMLCompletionProposalComputer.java:835)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:379)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:171)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2015)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2011)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2020-06-13 12:00:07.594
+!MESSAGE The ''org.eclipse.fx.ide.fxml.proposalComputer1'' proposal computer from the ''org.eclipse.fx.ide.fxml'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.getValueOfMethod(FXObjectPoperty.java:54)
+	at org.eclipse.fx.ide.model.internal.FXObjectPoperty.hasValueOf(FXObjectPoperty.java:46)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createObjectPropnameProposals(FXMLCompletionProposalComputer.java:347)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.createAttributeNameProposal(FXMLCompletionProposalComputer.java:281)
+	at org.eclipse.fx.ide.fxml.editors.FXMLCompletionProposalComputer.addAttributeNameProposals(FXMLCompletionProposalComputer.java:226)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeAttributeProposals(AbstractXMLCompletionProposalComputer.java:495)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:386)
+	at org.eclipse.wst.xml.ui.internal.contentassist.AbstractXMLCompletionProposalComputer.computeCompletionProposals(AbstractXMLCompletionProposalComputer.java:171)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2015)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2014)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2011)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3961)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3588)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+!SESSION 2020-06-13 15:57:07.968 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-13 15:57:42.731
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2020-06-13 15:58:14.424
+!MESSAGE Cannot perform the update. Failed to download artifacts.
+!STACK 1
+org.eclipse.core.runtime.CoreException: An error occurred while collecting items to be installed
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:270)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: session context was:(profile=C__Users_wacef_Desktop_Java_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.codegen,2.20.0.v20200324-0932
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.codegen.ecore,2.22.0.v20200324-0947
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.common,2.19.0.v20200324-0932
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.common.source,2.19.0.v20200324-0932
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.ecore,2.22.0.v20200519-1135
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.ecore.source,2.22.0.v20200519-1135
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.edit,2.16.0.v20190920-0401
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.edit.ui,2.18.0.v20200205-0529
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ide,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ide.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ui,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ui.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.ui,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.ui.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.lib,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.lib.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.runtime,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.runtime.source,2.11.3.v20200520-0756
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.core,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.core.source,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.doc,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.examples,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.ide,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.ide.common,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.ide.common.source,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.ide.source,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.lib,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.lib.macro,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.lib.macro.source,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.lib.source,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.m2e,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.m2e.source,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.standalone,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtend.standalone.source,2.22.0.v20200602-1430
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.activities,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.activities.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.builder,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.builder.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.builder.standalone,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.builder.standalone.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.edit,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.edit.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.jdt38,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.jdt38.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.doc,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ecore,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ecore.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.generator,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.generator.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ide,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ide.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.java,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.java.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.junit4,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.junit4.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.logging,1.2.15.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.logging.source,1.2.15.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.m2e,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.m2e.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ide,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ide.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.smap,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.smap.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.testing,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.testing.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codemining,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codemining.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ide,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ide.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.ecore,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.ecore.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.shared,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.shared.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.util,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.util.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.lib,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.lib.source,2.22.0.v20200602-0713
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing.source,2.22.0.v20200602-1114
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.examples,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.source,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard.source,2.22.0.v20200602-1352
+Contains: No repository found containing: osgi.bundle,org.objectweb.asm,8.0.1.v20200420-1007
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.common,2.19.0.v20200324-0932
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.ecore,2.22.0.v20200519-1135
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.language.sdk,2.11.3.v20200520-0756
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher,2.11.3.v20200520-0756
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher.source,2.11.3.v20200520-0756
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.runtime.sdk,2.11.3.v20200520-0756
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtend.sdk,2.22.0.v20200602-1533
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.buildship,2.22.0.v20200602-1242
+Contains: No repository found containing: osgi.bundle,org.eclipse.xtext.buildship.source,2.22.0.v20200602-1242
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.docs,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.examples,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.redist,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.runtime,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.sdk,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.ui,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase.lib,2.22.0.v20200602-0715
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui,2.22.0.v20200602-1533
+Contains: No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui.graph,2.22.0.v20200602-1533
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 4 2020-06-13 15:58:14.426
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 2 org.eclipse.equinox.p2.engine 4 0 2020-06-13 15:58:14.426
+!MESSAGE session context was:(profile=C__Users_wacef_Desktop_Java_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.codegen,2.20.0.v20200324-0932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.codegen.ecore,2.22.0.v20200324-0947
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.common,2.19.0.v20200324-0932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.common.source,2.19.0.v20200324-0932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.ecore,2.22.0.v20200519-1135
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.ecore.source,2.22.0.v20200519-1135
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.edit,2.16.0.v20190920-0401
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.edit.ui,2.18.0.v20200205-0529
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ide,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ide.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ui,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.language.ui.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.ui,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.launch.ui.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.lib,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.lib.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.runtime,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.emf.mwe2.runtime.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.core,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.core.source,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.doc,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.examples,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.ide,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.ide.common,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.ide.common.source,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.ide.source,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.lib,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.lib.macro,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.lib.macro.source,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.lib.source,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.m2e,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.m2e.source,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.standalone,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtend.standalone.source,2.22.0.v20200602-1430
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.activities,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.426
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.activities.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.builder,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.builder.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.builder.standalone,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.builder.standalone.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.edit,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.edit.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.jdt38,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.jdt38.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.shared.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.common.types.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.doc,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ecore,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ecore.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.generator,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.generator.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ide,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ide.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.java,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.java.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.junit4,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.junit4.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.logging,1.2.15.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.logging.source,1.2.15.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.m2e,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.m2e.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ide,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ide.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.purexbase.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.smap,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.smap.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.testing,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.testing.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codemining,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codemining.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ide,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ide.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.codetemplates.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.ecore,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.ecore.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.427
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.shared,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.shared.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.util,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.util.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.lib,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.lib.source,2.22.0.v20200602-0713
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing.source,2.22.0.v20200602-1114
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.examples,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard.source,2.22.0.v20200602-1352
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.objectweb.asm,8.0.1.v20200420-1007
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.common,2.19.0.v20200324-0932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.ecore,2.22.0.v20200519-1135
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.language.sdk,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher.source,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.emf.mwe2.runtime.sdk,2.11.3.v20200520-0756
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtend.sdk,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.buildship,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.buildship.source,2.22.0.v20200602-1242
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.docs,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.examples,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.redist,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.runtime,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.sdk,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.ui,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase.lib,2.22.0.v20200602-0715
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui,2.22.0.v20200602-1533
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2020-06-13 15:58:14.428
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui.graph,2.22.0.v20200602-1533
+!SESSION 2020-06-16 08:48:33.314 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-16 08:49:19.505
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-16 08:49:20.309
+!MESSAGE Connection to http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200505/p2.index failed on downloads.genuitec.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2020-06-16 08:49:20.820
+!MESSAGE Failed to access metadata repository under http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200505
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unknown Host: http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200505/content.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:247)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.RepositoryController.processRepositories(RepositoryController.java:57)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.RepositoryController.<init>(RepositoryController.java:43)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:210)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-16 08:49:20.821
+!MESSAGE Unknown Host: http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200505/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-06-17 10:29:53.744 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-17 10:30:46.344
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:46.455
+!MESSAGE Connection to https://download.eclipse.org/modeling/tmf/xtext/updates/composite/marketplace/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:46.830
+!MESSAGE Unknown Host: https://download.eclipse.org/modeling/tmf/xtext/updates/composite/marketplace/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:46.836
+!MESSAGE Connection to http://download.eclipse.org/efxclipse/updates-released/3.6.0/site/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:47.110
+!MESSAGE Unknown Host: http://download.eclipse.org/efxclipse/updates-released/3.6.0/site/content.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:47.118
+!MESSAGE Connection to http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200324a/p2.index failed on downloads.genuitec.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:47.376
+!MESSAGE Unknown Host: http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20200324a/content.xml
+!STACK 0
+java.net.UnknownHostException: downloads.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:47.385
+!MESSAGE Connection to https://www.codetogether.com/updates/ci/p2.index failed on www.codetogether.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.codetogether.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:47.627
+!MESSAGE Unknown Host: https://www.codetogether.com/updates/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.codetogether.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:47.633
+!MESSAGE Connection to http://download.eclipse.org/mpc/releases/1.7.7/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:47.912
+!MESSAGE Connection to http://download.eclipse.org/mpc/releases/1.7.7/content.xml.xz failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:48.121
+!MESSAGE Unknown Host: http://download.eclipse.org/mpc/releases/1.7.7/content.xml.xz
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:48.127
+!MESSAGE Connection to http://download.eclipse.org/eclipse/updates/4.13/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:48.356
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.13/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:48.363
+!MESSAGE Connection to http://download.eclipse.org/releases/2019-09/201909181001/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:48.588
+!MESSAGE Connection to http://download.eclipse.org/releases/2019-09/201909181001/content.xml.xz failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:48.806
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/2019-09/201909181001/content.xml.xz
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:50.365
+!MESSAGE Connection to http://download.eclipse.org/releases/2019-09/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:50.634
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/2019-09/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:50.640
+!MESSAGE Connection to http://download.eclipse.org/usssdk/updates/release/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:50.882
+!MESSAGE Unknown Host: http://download.eclipse.org/usssdk/updates/release/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:50.887
+!MESSAGE Connection to http://download.eclipse.org/oomph/updates/milestone/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:51.147
+!MESSAGE Unknown Host: http://download.eclipse.org/oomph/updates/milestone/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:51.152
+!MESSAGE Connection to http://download.eclipse.org/technology/epp/packages/2019-09/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:51.381
+!MESSAGE Connection to http://download.eclipse.org/technology/epp/packages/2019-09/content.xml.xz failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:51.595
+!MESSAGE Unknown Host: http://download.eclipse.org/technology/epp/packages/2019-09/content.xml.xz
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-06-17 10:30:51.646
+!MESSAGE Connection to http://www.genuitec.com/updates/devstyle/ci/p2.index failed on www.genuitec.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2020-06-17 10:30:51.889
+!MESSAGE Unknown Host: http://www.genuitec.com/updates/devstyle/ci/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-06-17 21:53:39.454 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-17 21:54:07.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-19 11:30:33.031 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-19 11:31:26.928
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-19 12:08:31.291 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-19 12:08:45.230
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-19 12:15:37.005 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-19 12:15:49.921
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-19 16:40:51.056 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-19 16:41:11.603
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-20 11:51:19.534 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\wacef\Desktop\ISET\DSI22 S2\Java avancée\Workspace -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 4 567 2020-06-20 11:51:23.270
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2020-06-20 11:51:23.270
+!MESSAGE Could not read metadata for 'Patron Strategy'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Patron Strategy)[567]: java.lang.Exception: The project description file (.project) for 'Patron Strategy' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1557)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2454)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2211)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2020-06-20 11:51:23.301
+!MESSAGE The project description file (.project) for 'Patron Strategy' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'Patron Strategy' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1557)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2454)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2211)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-20 11:51:35.766
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-21 13:01:42.675 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-21 13:02:10.942
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-21 13:02:10.942
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e948f1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24405466,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-21 13:02:13.441
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-21 13:02:19.055
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.086
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.gef.ui.palette_view" id and the "Palette" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.117
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.mylyn.builds.navigator.builds" id and the "Builds" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.133
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.wst.common.snippets.internal.ui.SnippetsView" id and the "Snippets" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.148
+!MESSAGE Removing PartDescriptorImpl with the "com.genuitec.eclipse.icons.designer.ui.views.IconsDesignerView" id and the "Icon Designer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.164
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.fx.ide.ui.preview" id and the "JavaFX Preview" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.180
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.PluginsView" id and the "Plug-ins" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.195
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.FeaturesView" id and the "Features" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.195
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.DependenciesView" id and the "Plug-in Dependencies" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.211
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.TargetPlatformState" id and the "Target Platform State" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.227
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.ImageBrowserView" id and the "Plug-in Image Browser" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.258
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtend.ide.view.DerivedSourceView" id and the "Generated Code" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.273
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtext.ui.XtextCallHierarchy" id and the "Call Hierarchy" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-06-21 13:02:19.305
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.xtext.xtext.ui.graph.view" id and the "Xtext Syntax Graph" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.core.resources 4 567 2020-06-21 13:05:08.714
+!MESSAGE The project description file (.project) for 'Patron Strategy' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'Patron Strategy' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:763)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-06-21 13:06:19.643 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-21 13:06:31.061
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-21 13:06:31.061
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ffa0f38,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13cc31df,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-21 13:06:34.000
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-21 13:06:41.108
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-21 20:58:44.760 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-21 20:58:52.141
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-21 20:58:52.141
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4e51eda7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2862271a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-21 20:58:54.286
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-21 20:58:59.915
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-22 15:19:37.184 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-22 15:20:05.370
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 15:20:05.370
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@398694a6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@653e7b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-22 15:20:07.814
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-22 15:20:19.265
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-22 17:09:40.124 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-22 17:09:47.060
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-22 17:09:47.060
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32e7b78d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4583b617,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-22 17:09:47.607
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-22 17:09:54.297
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-24 11:37:34.052 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-24 11:37:49.760
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-24 11:37:49.760
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5fb514c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e9b3b3c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-24 11:37:50.916
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-24 11:38:06.549
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-24 21:20:04.214 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-06-24 21:22:55.140
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-24 21:22:55.140
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4e51eda7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2862271a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-06-24 21:22:55.851
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-24 21:23:07.632
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-07-16 11:58:58.860 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-07-16 11:59:40.080
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-07-16 11:59:40.080
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c89b864,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3400d6fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-07-16 11:59:42.033
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-16 11:59:52.901
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wacef'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

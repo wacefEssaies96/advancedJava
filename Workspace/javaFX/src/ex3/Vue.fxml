@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.PasswordField?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex3.Controller">
+	<padding>
+		<Insets top="30" right="30" bottom="30" left="30"></Insets>
+	</padding>
+
+	<Label text="Login" GridPane.rowIndex="0" GridPane.columnIndex="0"></Label>
+	<TextField fx:id="tfUserName" GridPane.rowIndex="0" GridPane.columnIndex="1"></TextField>
+	<Label text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
+	<TextField fx:id="tfPassword" GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
+	<Button 
+		text="Login"
+		GridPane.rowIndex="2"
+		GridPane.columnIndex="0"
+		onAction="#test">
+	</Button>
+	<Label GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="textResult"></Label>
+</GridPane>
+

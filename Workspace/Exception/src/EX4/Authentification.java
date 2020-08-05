@@ -16,6 +16,7 @@ public class Authentification {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Donner le nom d'utilisateur");
 		String user = sc.nextLine();
+		sc.close();
 		if(user.length() > 8 ) {
 			throw new WrongInputLength();
 		}
@@ -28,6 +29,7 @@ public class Authentification {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Donner le mot de passe");
 		String pwd = sc.nextLine();
+		sc.close();
 		if(!pwd.equals(PwdCorrect)) {
 			throw new WrongPwdException();
 		}

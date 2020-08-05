@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="listView.Controller">
+	<HBox spacing="10" fx:id="test">
+		<padding>
+			<Insets left="20" right="20" top="20" bottom="20"></Insets>
+		</padding>
+		<Label text="Your name : "></Label>
+		<TextField fx:id="tfName"></TextField>
+		<Button text="Ajouter" onAction="#ajouter"></Button>
+		
+	</HBox>
+	<HBox spacing="10">
+		<padding>
+			<Insets left="120" right="20" top="20" bottom="20"></Insets>
+		</padding>
+		
+		<ListView fx:id="listView" prefHeight="300" prefWidth="250"></ListView>
+	</HBox>
+	
+</VBox>
+
